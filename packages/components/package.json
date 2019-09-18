@@ -1,7 +1,7 @@
 {
   "name": "@apollo/taro-components",
   "description": "React Apollo Query, Mutation and Subscription components.",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "author": "opensource@apollographql.com",
   "keywords": [
     "apollo",
@@ -45,8 +45,8 @@
     "react-dom": "^16.8.0"
   },
   "dependencies": {
-    "@apollo/taro-common": "^0.1.2",
-    "@apollo/taro-hooks": "^0.2.1",
+    "@apollo/taro-common": "^0.1.3",
+    "@apollo/taro-hooks": "^0.2.2",
     "prop-types": "^15.7.2",
     "ts-invariant": "^0.4.4",
     "tslib": "^1.10.0"

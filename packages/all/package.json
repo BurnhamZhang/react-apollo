@@ -1,7 +1,7 @@
 {
   "name": "taro-apollo",
   "description": "Taro Apollo Hooks, Components, and HOC.",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "author": "opensource@apollographql.com",
   "keywords": [
     "apollo",
@@ -38,10 +38,10 @@
     "graphql": "^14.3.1"
   },
   "dependencies": {
-    "@apollo/taro-common": "^0.1.2",
-    "@apollo/taro-components": "^0.2.1",
+    "@apollo/taro-common": "^0.1.3",
+    "@apollo/taro-components": "^0.2.2",
     "@apollo/taro-hoc": "file:../hoc",
-    "@apollo/taro-hooks": "^0.2.1"
+    "@apollo/taro-hooks": "^0.2.2"
   },
   "files": [
     "lib"
