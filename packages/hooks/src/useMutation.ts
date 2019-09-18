@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from '@tarojs/taro';
-import { getApolloContext, OperationVariables } from '@apollo/react-common';
+import {ApolloContextValue, getApolloContext, OperationVariables} from '@apollo/taro-common';
 import { DocumentNode } from 'graphql';
 
 import { MutationHookOptions, MutationTuple } from './types';
@@ -9,7 +9,7 @@ export function useMutation<TData = any, TVariables = OperationVariables>(
   mutation: DocumentNode,
   options?: MutationHookOptions<TData, TVariables>
 ): MutationTuple<TData, TVariables> {
-  const context = getApolloContext();
+  const context = getApolloContext() as ApolloContextValue;
   const [result, setResult] = useState({ called: false, loading: false });
   const updatedOptions = options ? { ...options, mutation } : { mutation };
 

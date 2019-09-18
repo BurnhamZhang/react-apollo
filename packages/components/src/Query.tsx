@@ -1,5 +1,5 @@
-import { OperationVariables } from '@apollo/react-common';
-import { useQuery } from '@apollo/react-hooks';
+import { OperationVariables } from '@apollo/taro-common';
+import { useQuery } from '@apollo/taro-hooks';
 import PropTypes from 'prop-types';
 
 import { QueryComponentOptions } from './types';

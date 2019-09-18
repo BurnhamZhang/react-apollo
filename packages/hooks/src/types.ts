@@ -16,7 +16,7 @@ import {
   BaseSubscriptionOptions,
   SubscriptionResult,
   Context
-} from '@apollo/react-common';
+} from '@apollo/taro-common';
 import { DocumentNode } from 'graphql';
 
 /* Common types */

@@ -1,7 +1,7 @@
-import Taro from '@taro/tarojs';
+import Taro from '@tarojs/taro';
 import hoistNonReactStatics from 'hoist-non-react-statics';
 import { invariant } from 'ts-invariant';
-import {getApolloContext} from '@apollo/taro-common';
+import {ApolloContextValue, getApolloContext} from '@apollo/taro-common';
 
 import { OperationOption, WithApolloClient } from './types';
 
@@ -44,7 +44,7 @@ export function withApollo<TProps, TResult = any>(
     }
 
     render() {
-      const {client} =  getApolloContext();
+      const {client} =  getApolloContext() as ApolloContextValue;
       const props = Object.assign({}, this.props, {
         client,
         ref: operationOptions.withRef

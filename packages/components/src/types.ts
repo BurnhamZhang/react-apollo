@@ -6,9 +6,9 @@ import {
   MutationFunction,
   MutationResult,
   SubscriptionResult
-} from '@apollo/react-common';
+} from '@apollo/taro-common';
 import { DocumentNode } from 'graphql';
-import { BaseSubscriptionOptions } from '@apollo/react-common';
+import { BaseSubscriptionOptions } from '@apollo/taro-common';
 
 export interface QueryComponentOptions<
   TData = any,

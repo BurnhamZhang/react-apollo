@@ -3,19 +3,20 @@ import {
   getApolloContext,
   OperationVariables,
   QueryResult
-} from '@apollo/react-common';
+} from '@apollo/taro-common';
 import { DocumentNode } from 'graphql';
 
 import { QueryHookOptions, QueryOptions, QueryTuple } from '../types';
 import { QueryData } from '../data/QueryData';
 import { useDeepMemo } from './useDeepMemo';
+import {ApolloContextValue} from "@apollo/taro-common";
 
 export function useBaseQuery<TData = any, TVariables = OperationVariables>(
   query: DocumentNode,
   options?: QueryHookOptions<TData, TVariables>,
   lazy = false
 ) {
-  const context = getApolloContext();
+  const context = getApolloContext() as ApolloContextValue;
   const [tick, forceUpdate] = useReducer(x => x + 1, 0);
   const updatedOptions = options ? { ...options, query } : { query };
 

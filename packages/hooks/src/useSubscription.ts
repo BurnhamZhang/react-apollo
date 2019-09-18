@@ -1,6 +1,6 @@
 import {  useState, useRef, useEffect } from '@tarojs/taro';
 import { DocumentNode } from 'graphql';
-import { getApolloContext, OperationVariables } from '@apollo/taro-common';
+import {ApolloContextValue, getApolloContext, OperationVariables} from '@apollo/taro-common';
 
 import { SubscriptionHookOptions } from './types';
 import { SubscriptionData } from './data/SubscriptionData';
@@ -9,7 +9,7 @@ export function useSubscription<TData = any, TVariables = OperationVariables>(
   subscription: DocumentNode,
   options?: SubscriptionHookOptions<TData, TVariables>
 ) {
-  const context = getApolloContext();
+  const context = getApolloContext() as ApolloContextValue;
   const updatedOptions = options
     ? { ...options, subscription }
     : { subscription };
