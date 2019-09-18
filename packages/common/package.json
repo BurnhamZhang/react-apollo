@@ -1,7 +1,7 @@
 {
   "name": "@apollo/taro-common",
   "description": "React Apollo common utilities.",
-  "version": "3.1.0",
+  "version": "0.1.0",
   "author": "opensource@apollographql.com",
   "keywords": [
     "apollo",
@@ -9,8 +9,8 @@
     "taro"
   ],
   "license": "MIT",
-  "main": "./lib/react-common.cjs.js",
-  "module": "./lib/react-common.esm.js",
+  "main": "./lib/taro-common.cjs.js",
+  "module": "./lib/taro-common.esm.js",
   "typings": "./lib/index.d.ts",
   "repository": {
     "type": "git",

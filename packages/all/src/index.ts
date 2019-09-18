@@ -3,6 +3,7 @@ export {
   ApolloContextValue,
   getApolloContext,
   resetApolloContext,
+  setApolloContext,
   // types
   OperationVariables,
   Context,
@@ -20,7 +21,7 @@ export {
   OnSubscriptionDataOptions,
   BaseSubscriptionOptions,
   SubscriptionResult
-} from '@apollo/react-common';
+} from '@apollo/taro-common';
 
 // @apollo/react-components
 export {
@@ -31,7 +32,7 @@ export {
   QueryComponentOptions,
   MutationComponentOptions,
   SubscriptionComponentOptions
-} from '@apollo/react-components';
+} from '@apollo/taro-components';
 
 // @apollo/react-hoc
 export {
@@ -51,7 +52,7 @@ export {
   OptionProps,
   OperationOption,
   WithApolloClient
-} from '@apollo/react-hoc';
+} from '@apollo/taro-hoc';
 
 // @apollo/react-hooks
 export {
@@ -72,5 +73,5 @@ export {
   SubscriptionHookOptions,
   SubscriptionOptions,
   SubscriptionCurrentObservable
-} from '@apollo/react-hooks';
+} from '@apollo/taro-hooks';
 

@@ -20,7 +20,7 @@ const defaultGlobals = {
   'apollo-cache-inmemory': 'apolloCacheInMemory',
   'apollo-link': 'apolloLink',
   graphql: 'graphql',
-  'taro-apollo': 'reactApollo',
+  'taro-apollo': 'taroApollo',
   react: 'React',
   'ts-invariant': 'invariant',
   tslib: 'tslib',

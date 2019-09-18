@@ -1,26 +1,26 @@
 {
-  "name": "react-apollo",
-  "description": "React Apollo Hooks, Components, and HOC.",
-  "version": "3.1.0",
+  "name": "taro-apollo",
+  "description": "Taro Apollo Hooks, Components, and HOC.",
+  "version": "0.1.0",
   "author": "opensource@apollographql.com",
   "keywords": [
     "apollo",
     "graphql",
-    "react",
+    "taro",
     "hooks",
     "hoc",
     "components"
   ],
   "license": "MIT",
-  "main": "./lib/react-apollo.cjs.js",
-  "module": "./lib/react-apollo.esm.js",
+  "main": "./lib/taro-apollo.cjs.js",
+  "module": "./lib/taro-apollo.esm.js",
   "react-native": {
     "react-dom/server": false
   },
   "typings": "./lib/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "apollographql/react-apollo"
+    "url": "burnhamzhang/taro-apollo"
   },
   "sideEffects": false,
   "scripts": {
@@ -40,11 +40,10 @@
     "react-dom": "^16.8.0"
   },
   "dependencies": {
-    "@apollo/react-common": "file:../common",
-    "@apollo/react-components": "file:../components",
-    "@apollo/react-hoc": "file:../hoc",
-    "@apollo/react-hooks": "file:../hooks",
-    "@apollo/react-ssr": "file:../ssr"
+    "@apollo/taro-common": "file:../common",
+    "@apollo/taro-components": "file:../components",
+    "@apollo/taro-hoc": "file:../hoc",
+    "@apollo/taro-hooks": "file:../hooks",
   },
   "files": [
     "lib"
