@@ -33,17 +33,15 @@
     "deploy": "npm publish"
   },
   "peerDependencies": {
-    "@types/react": "^16.8.0",
+    "@tarojs/taro": "^1.3.18",
     "apollo-client": "^2.6.4",
-    "graphql": "^14.3.1",
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0"
+    "graphql": "^14.3.1"
   },
   "dependencies": {
     "@apollo/taro-common": "file:../common",
     "@apollo/taro-components": "file:../components",
     "@apollo/taro-hoc": "file:../hoc",
-    "@apollo/taro-hooks": "file:../hooks",
+    "@apollo/taro-hooks": "file:../hooks"
   },
   "files": [
     "lib"
