@@ -1,7 +1,7 @@
 {
   "name": "@apollo/taro-common",
   "description": "React Apollo common utilities.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "opensource@apollographql.com",
   "keywords": [
     "apollo",

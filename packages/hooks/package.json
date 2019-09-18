@@ -1,7 +1,7 @@
 {
   "name": "@apollo/taro-hooks",
   "description": "Taro Apollo Hooks.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": "burnhamzhang@gmail.com",
   "keywords": [
     "apollo",
@@ -41,7 +41,7 @@
     "react-dom": "^16.8.0"
   },
   "dependencies": {
-    "@apollo/taro-common": "^0.1.1",
+    "@apollo/taro-common": "^0.1.2",
     "@wry/equality": "^0.1.9",
     "ts-invariant": "^0.4.4",
     "tslib": "^1.10.0"
