@@ -1,7 +1,7 @@
 {
   "name": "@apollo/taro-components",
   "description": "React Apollo Query, Mutation and Subscription components.",
-  "version": "3.1.1",
+  "version": "0.1.0",
   "author": "opensource@apollographql.com",
   "keywords": [
     "apollo",

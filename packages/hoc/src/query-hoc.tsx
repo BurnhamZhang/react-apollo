@@ -1,8 +1,8 @@
-import React from 'react';
+import Taro from '@tarojs/taro';
 import { DocumentNode } from 'graphql';
 import hoistNonReactStatics from 'hoist-non-react-statics';
-import { parser, BaseQueryOptions } from '@apollo/react-common';
-import { Query } from '@apollo/react-components';
+import { parser, BaseQueryOptions } from '@apollo/taro-common';
+import { Query } from '@apollo/taro-components';
 
 import {
   getDisplayName,
@@ -49,8 +49,8 @@ export function withQuery<
   // allow for advanced referential equality checks
   let lastResultProps: TChildProps | void;
   return (
-    WrappedComponent: React.ComponentType<TProps & TChildProps>
-  ): React.ComponentClass<TProps> => {
+    WrappedComponent: Taro.ComponentType<TProps & TChildProps>
+  ): Taro.ComponentClass<TProps> => {
     const graphQLDisplayName = `${alias}(${getDisplayName(WrappedComponent)})`;
     class GraphQL extends GraphQLBase<TProps, TChildProps> {
       static displayName = graphQLDisplayName;

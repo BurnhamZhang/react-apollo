@@ -13,7 +13,7 @@ import {
   BaseQueryOptions,
   BaseMutationOptions,
   MutationResult
-} from '@apollo/react-common';
+} from '@apollo/taro-common';
 
 export interface QueryControls<
   TData = any,

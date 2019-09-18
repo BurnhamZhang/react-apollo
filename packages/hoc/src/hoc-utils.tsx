@@ -1,12 +1,12 @@
-import React from 'react';
+import Taro from '@tarojs/taro';
 import { invariant } from 'ts-invariant';
-import { IDocumentDefinition, OperationVariables } from '@apollo/react-common';
+import { IDocumentDefinition, OperationVariables } from '@apollo/taro-common';
 
 export const defaultMapPropsToOptions = () => ({});
 export const defaultMapResultToProps: <P>(props: P) => P = props => props;
 export const defaultMapPropsToSkip = () => false;
 
-export function getDisplayName<P>(WrappedComponent: React.ComponentType<P>) {
+export function getDisplayName<P>(WrappedComponent: Taro.ComponentType<P>) {
   return WrappedComponent.displayName || WrappedComponent.name || 'Component';
 }
 
@@ -35,7 +35,7 @@ export function calculateVariablesFromProps<TProps>(
 }
 
 export type RefSetter<TChildProps> = (
-  ref: React.ComponentClass<TChildProps>
+  ref: Taro.ComponentClass<TChildProps>
 ) => void | void;
 
 // base class for hocs to easily manage refs
@@ -43,10 +43,10 @@ export class GraphQLBase<
   TProps,
   TChildProps,
   TState = any
-  > extends React.Component<TProps, TState> {
+  > extends Taro.Component<TProps, TState> {
   public withRef: boolean = false;
   // wrapped instance
-  private wrappedInstance?: React.ComponentClass<TChildProps>;
+  private wrappedInstance?: Taro.ComponentClass<TChildProps>;
 
   constructor(props: TProps) {
     super(props);
@@ -63,7 +63,7 @@ export class GraphQLBase<
     return this.wrappedInstance;
   }
 
-  setWrappedInstance(ref: React.ComponentClass<TChildProps>) {
+  setWrappedInstance(ref: Taro.ComponentClass<TChildProps>) {
     this.wrappedInstance = ref;
   }
 }

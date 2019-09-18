@@ -1,5 +1,5 @@
 import { DocumentNode } from 'graphql';
-import { parser, DocumentType } from '@apollo/react-common';
+import { parser, DocumentType } from '@apollo/taro-common';
 
 import { withQuery } from './query-hoc';
 import { withMutation } from './mutation-hoc';

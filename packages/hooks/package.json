@@ -1,24 +1,24 @@
 {
   "name": "@apollo/taro-hooks",
-  "description": "React Apollo Hooks.",
-  "version": "3.1.1",
-  "author": "opensource@apollographql.com",
+  "description": "Taro Apollo Hooks.",
+  "version": "0.1.0",
+  "author": "burnhamzhang@gmail.com",
   "keywords": [
     "apollo",
     "graphql",
-    "react",
+    "taro",
     "hooks"
   ],
   "license": "MIT",
-  "main": "./lib/react-hooks.cjs.js",
-  "module": "./lib/react-hooks.esm.js",
+  "main": "./lib/taro-hooks.cjs.js",
+  "module": "./lib/taro-hooks.esm.js",
   "react-native": {
     "react-dom/server": false
   },
   "typings": "./lib/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "apollographql/react-apollo"
+    "url": "burnhamzhang/taro-apollo"
   },
   "sideEffects": false,
   "scripts": {

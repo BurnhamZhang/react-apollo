@@ -1,8 +1,8 @@
 import Taro from '@tarojs/taro';
 import { DocumentNode } from 'graphql';
 import hoistNonReactStatics from 'hoist-non-react-statics';
-import { parser, BaseQueryOptions } from '@apollo/react-common';
-import { Subscription } from '@apollo/react-components';
+import { parser, BaseQueryOptions } from '@apollo/taro-common';
+import { Subscription } from '@apollo/taro-components';
 
 import {
   getDisplayName,

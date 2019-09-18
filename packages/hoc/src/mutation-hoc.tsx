@@ -1,4 +1,4 @@
-import React from 'react';
+import Taro from '@tarojs/taro';
 import { DocumentNode } from 'graphql';
 import hoistNonReactStatics from 'hoist-non-react-statics';
 import {
@@ -6,8 +6,8 @@ import {
   BaseMutationOptions,
   MutationFunction,
   MutationResult
-} from '@apollo/react-common';
-import { Mutation } from '@apollo/react-components';
+} from '@apollo/taro-common';
+import { Mutation } from '@apollo/taro-components';
 
 import {
   defaultMapPropsToOptions,

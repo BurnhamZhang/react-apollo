@@ -1,24 +1,21 @@
 {
   "name": "@apollo/react-hoc",
-  "description": "React Apollo `graphql` higher-order component.",
-  "version": "3.1.1",
-  "author": "opensource@apollographql.com",
+  "description": "Taro Apollo `graphql` higher-order component.",
+  "version": "0.1.0",
+  "author": "burnhamzhang@gmail.com",
   "keywords": [
     "apollo",
     "graphql",
-    "react",
+    "taro",
     "hoc"
   ],
   "license": "MIT",
-  "main": "./lib/react-hoc.cjs.js",
-  "module": "./lib/react-hoc.esm.js",
-  "react-native": {
-    "react-dom/server": false
-  },
+  "main": "./lib/taro-hoc.cjs.js",
+  "module": "./lib/taro-hoc.esm.js",
   "typings": "./lib/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "apollographql/react-apollo"
+    "url": "apollographql/taro-apollo"
   },
   "sideEffects": false,
   "scripts": {
@@ -56,7 +53,6 @@
     "access": "public"
   },
   "devDependencies": {
-    "@apollo/react-ssr": "file:../ssr",
     "jest": "24.9.0",
     "rollup": "1.20.3",
     "tsc-watch": "3.0.1",
