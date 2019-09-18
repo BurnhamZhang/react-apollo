@@ -24,7 +24,6 @@
     "build": "npx tsc -p ./config",
     "postbuild": "npx rollup -c ./config/rollup.config.js",
     "watch": "npx tsc-watch --onSuccess \"npm run postbuild\" -p ./config",
-    "predeploy": "npm run build",
     "deploy": "npm publish",
     "test": "npx jest --config ../../config/jest.config.js --testPathPattern packages/common",
     "test:watch": "npx jest --config ../../config/jest.config.js --testPathPattern packages/common --watch",

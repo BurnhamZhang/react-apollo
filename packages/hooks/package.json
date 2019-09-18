@@ -28,7 +28,6 @@
     "build": "npx tsc -p ./config",
     "postbuild": "npx rollup -c ./config/rollup.config.js",
     "watch": "npx tsc-watch --onSuccess \"npm run postbuild\" -p ./config",
-    "predeploy": "npm run build",
     "deploy": "npm publish",
     "test": "npx jest --config ../../config/jest.config.js --testPathPattern packages/hooks",
     "test:watch": "npx jest --config ../../config/jest.config.js --testPathPattern packages/hooks --watch",
@@ -42,7 +41,7 @@
     "react-dom": "^16.8.0"
   },
   "dependencies": {
-    "@apollo/taro-common": "file:../common",
+    "@apollo/taro-common": "^0.1.1",
     "@wry/equality": "^0.1.9",
     "ts-invariant": "^0.4.4",
     "tslib": "^1.10.0"
@@ -58,5 +57,6 @@
     "rollup": "1.20.3",
     "tsc-watch": "3.0.1",
     "typescript": "3.5.3"
-  }
+  },
+  "gitHead": "024ebe352ddf80677e3e49cb06c4b88b56e990b7"
 }
