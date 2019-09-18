@@ -1,5 +1,5 @@
 {
-  "name": "apollo-react-monorepo",
+  "name": "apollo-taro-monorepo",
   "version": "3.0.0",
   "private": true,
   "author": "opensource@apollographql.com",
@@ -21,13 +21,11 @@
     "clean": "rm -Rf ./node_modules ./meta && npx lerna exec -- npm run clean"
   },
   "dependencies": {
-    "react-apollo": "file:./packages/all",
-    "@apollo/react-common": "file:./packages/common",
-    "@apollo/react-components": "file:./packages/components",
-    "@apollo/react-hoc": "file:./packages/hoc",
-    "@apollo/react-hooks": "file:./packages/hooks",
-    "@apollo/react-ssr": "file:./packages/ssr",
-    "@apollo/react-testing": "file:./packages/testing"
+    "@apollo/taro-common": "file:./packages/common",
+    "@apollo/taro-components": "file:./packages/components",
+    "@apollo/taro-hoc": "file:./packages/hoc",
+    "@apollo/taro-hooks": "file:./packages/hooks",
+    "taro-apollo": "file:./packages/all"
   },
   "devDependencies": {
     "@babel/core": "7.6.0",
@@ -70,34 +68,29 @@
   },
   "bundlesize": [
     {
-      "name": "react-apollo",
-      "path": "./packages/all/lib/react-apollo.cjs.min.js",
+      "name": "taro-apollo",
+      "path": "./packages/all/lib/taro-apollo.cjs.min.js",
       "maxSize": "380B"
     },
     {
-      "name": "@apollo/react-common",
-      "path": "./packages/common/lib/react-common.cjs.min.js",
+      "name": "@apollo/taro-common",
+      "path": "./packages/common/lib/taro-common.cjs.min.js",
       "maxSize": "750B"
     },
     {
-      "name": "@apollo/react-components",
-      "path": "./packages/components/lib/react-components.cjs.min.js",
+      "name": "@apollo/taro-components",
+      "path": "./packages/components/lib/taro-components.cjs.min.js",
       "maxSize": "680B"
     },
     {
-      "name": "@apollo/react-hoc",
-      "path": "./packages/hoc/lib/react-hoc.cjs.min.js",
+      "name": "@apollo/taro-hoc",
+      "path": "./packages/hoc/lib/taro-hoc.cjs.min.js",
       "maxSize": "1.55 kB"
     },
     {
-      "name": "@apollo/react-hooks",
-      "path": "./packages/hooks/lib/react-hooks.cjs.min.js",
+      "name": "@apollo/taro-hooks",
+      "path": "./packages/hooks/lib/taro-hooks.cjs.min.js",
       "maxSize": "4.2 kB"
-    },
-    {
-      "name": "@apollo/react-ssr",
-      "path": "./packages/ssr/lib/react-ssr.cjs.min.js",
-      "maxSize": "440B"
     }
   ],
   "renovate": {

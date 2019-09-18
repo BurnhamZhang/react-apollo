@@ -9,19 +9,18 @@ import umdModulesTransform from '@babel/plugin-transform-modules-umd';
 import { terser as minify } from 'rollup-plugin-terser';
 
 const defaultGlobals = {
-  '@apollo/react-common': 'apolloReactCommon',
-  '@apollo/react-components': 'apolloReactComponents',
-  '@apollo/react-hoc': 'apolloReactHOC',
-  '@apollo/react-hooks': 'apolloReactHooks',
-  '@apollo/react-testing': 'apolloReactTesting',
-  '@apollo/react-ssr': 'apolloReactSSR',
+  '@apollo/taro-common': 'apolloTaroCommon',
+  '@apollo/taro-components': 'apolloTaroComponents',
+  '@apollo/taro-hoc': 'apolloTaroHOC',
+  '@apollo/taro-hooks': 'apolloTaroHooks',
+  '@apollo/taro-testing': 'apolloTaroTesting',
   'apollo-client': 'apolloClient',
   'apollo-utilities': 'apolloUtilities',
   'apollo-cache': 'apolloCache',
   'apollo-cache-inmemory': 'apolloCacheInMemory',
   'apollo-link': 'apolloLink',
   graphql: 'graphql',
-  'react-apollo': 'reactApollo',
+  'taro-apollo': 'reactApollo',
   react: 'React',
   'ts-invariant': 'invariant',
   tslib: 'tslib',
@@ -35,7 +34,7 @@ const defaultGlobals = {
 export function rollup({
   name,
   input = './src/index.ts',
-  outputPrefix = 'react',
+  outputPrefix = 'taro',
   extraGlobals = {},
 }) {
   const tsconfig = './config/tsconfig.json';

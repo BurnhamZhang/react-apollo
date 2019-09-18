@@ -1,4 +1,4 @@
-import { OperationVariables } from '@apollo/react-common';
+import { OperationVariables } from '@apollo/taro-common';
 import { DocumentNode } from 'graphql';
 
 import { LazyQueryHookOptions, QueryTuple } from './types';

@@ -1,4 +1,4 @@
-import React from 'react';
+import Taro from '@tarojs/taro';
 import { DocumentNode } from 'graphql';
 import hoistNonReactStatics from 'hoist-non-react-statics';
 import { parser, BaseQueryOptions } from '@apollo/react-common';
@@ -47,8 +47,8 @@ export function withSubscription<
   // allow for advanced referential equality checks
   let lastResultProps: TChildProps | void;
   return (
-    WrappedComponent: React.ComponentType<TProps & TChildProps>
-  ): React.ComponentClass<TProps> => {
+    WrappedComponent: Taro.ComponentType<TProps & TChildProps>
+  ): Taro.ComponentClass<TProps> => {
     const graphQLDisplayName = `${alias}(${getDisplayName(WrappedComponent)})`;
     class GraphQL extends GraphQLBase<
       TProps,

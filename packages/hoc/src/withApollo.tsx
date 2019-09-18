@@ -1,23 +1,23 @@
-import React from 'react';
-import { ApolloConsumer } from '@apollo/react-common';
+import Taro from '@taro/tarojs';
 import hoistNonReactStatics from 'hoist-non-react-statics';
 import { invariant } from 'ts-invariant';
+import {getApolloContext} from '@apollo/taro-common';
 
 import { OperationOption, WithApolloClient } from './types';
 
-function getDisplayName<P>(WrappedComponent: React.ComponentType<P>) {
+function getDisplayName<P>(WrappedComponent: Taro.ComponentType<P>) {
   return WrappedComponent.displayName || WrappedComponent.name || 'Component';
 }
 
 export function withApollo<TProps, TResult = any>(
-  WrappedComponent: React.ComponentType<
+  WrappedComponent: Taro.ComponentType<
     WithApolloClient<Omit<TProps, 'client'>>
   >,
   operationOptions: OperationOption<TProps, TResult> = {}
-): React.ComponentClass<Omit<TProps, 'client'>> {
+): Taro.ComponentClass<Omit<TProps, 'client'>> {
   const withDisplayName = `withApollo(${getDisplayName(WrappedComponent)})`;
 
-  class WithApollo extends React.Component<Omit<TProps, 'client'>> {
+  class WithApollo extends Taro.Component<Omit<TProps, 'client'>> {
     static displayName = withDisplayName;
     static WrappedComponent = WrappedComponent;
 
@@ -39,24 +39,19 @@ export function withApollo<TProps, TResult = any>(
       return this.wrappedInstance;
     }
 
-    setWrappedInstance(ref: React.ComponentType<WithApolloClient<TProps>>) {
+    setWrappedInstance(ref: Taro.ComponentType<WithApolloClient<TProps>>) {
       this.wrappedInstance = ref;
     }
 
     render() {
-      return (
-        <ApolloConsumer>
-          {client => {
-            const props = Object.assign({}, this.props, {
-              client,
-              ref: operationOptions.withRef
-                ? this.setWrappedInstance
-                : undefined
-            });
-            return <WrappedComponent {...props} />;
-          }}
-        </ApolloConsumer>
-      );
+      const {client} =  getApolloContext();
+      const props = Object.assign({}, this.props, {
+        client,
+        ref: operationOptions.withRef
+            ? this.setWrappedInstance
+            : undefined
+      });
+      return <WrappedComponent {...props} />
     }
   }
 

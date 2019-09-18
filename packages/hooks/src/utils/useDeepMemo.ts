@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useRef } from '@tarojs/taro';
 import { equal as isEqual } from '@wry/equality';
 
 /**

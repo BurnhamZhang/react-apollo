@@ -1,4 +1,4 @@
-import { OperationVariables, QueryResult } from '@apollo/react-common';
+import { OperationVariables, QueryResult } from '@apollo/taro-common';
 import { DocumentNode } from 'graphql';
 
 import { QueryHookOptions } from './types';

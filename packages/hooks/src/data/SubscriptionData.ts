@@ -1,5 +1,5 @@
 import { equal as isEqual } from '@wry/equality';
-import { ApolloContextValue, SubscriptionResult } from '@apollo/react-common';
+import { ApolloContextValue, SubscriptionResult } from '@apollo/taro-common';
 
 import { OperationData } from './OperationData';
 import { SubscriptionCurrentObservable, SubscriptionOptions } from '../types';

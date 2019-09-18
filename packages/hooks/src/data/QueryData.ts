@@ -13,7 +13,7 @@ import {
   DocumentType,
   QueryResult,
   ObservableQueryFields
-} from '@apollo/react-common';
+} from '@apollo/taro-common';
 
 import {
   QueryPreviousData,

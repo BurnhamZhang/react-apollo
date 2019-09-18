@@ -6,10 +6,9 @@ export { withSubscription } from './subscription-hoc';
 export { withApollo } from './withApollo';
 
 export {
-  ApolloProvider,
-  ApolloConsumer,
   getApolloContext,
-  resetApolloContext
-} from '@apollo/react-common';
+  resetApolloContext,
+  setApolloContext
+} from '@apollo/taro-common';
 
 export * from './types';

@@ -1,10 +1,9 @@
 export {
   ApolloContextValue,
   getApolloContext,
-  resetApolloContext
+  resetApolloContext,
+  setApolloContext,
 } from './context/ApolloContext';
-export { ApolloProvider } from './context/ApolloProvider';
-export { ApolloConsumer } from './context/ApolloConsumer';
 
 export {
   parser,

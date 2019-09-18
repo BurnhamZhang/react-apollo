@@ -1,9 +1,8 @@
 export {
-  ApolloProvider,
-  ApolloConsumer,
   getApolloContext,
-  resetApolloContext
-} from '@apollo/react-common';
+  resetApolloContext,
+  setApolloContext
+} from '@apollo/taro-common';
 
 export { useQuery } from './useQuery';
 export { useLazyQuery } from './useLazyQuery';

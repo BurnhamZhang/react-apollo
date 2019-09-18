@@ -1,4 +1,3 @@
-import { ReactNode } from 'react';
 import {
   ApolloClient,
   ApolloQueryResult,
@@ -30,7 +29,7 @@ export type CommonOptions<TOptions> = TOptions & {
 
 export interface QueryOptions<TData = any, TVariables = OperationVariables>
   extends QueryFunctionOptions<TData, TVariables> {
-  children?: (result: QueryResult<TData, TVariables>) => ReactNode;
+  children?: (result: QueryResult<TData, TVariables>) => any;
   query: DocumentNode;
 }
 

@@ -3,8 +3,6 @@ export {
   ApolloContextValue,
   getApolloContext,
   resetApolloContext,
-  ApolloProvider,
-  ApolloConsumer,
   // types
   OperationVariables,
   Context,
@@ -76,8 +74,3 @@ export {
   SubscriptionCurrentObservable
 } from '@apollo/react-hooks';
 
-export {
-  getMarkupFromTree,
-  getDataFromTree,
-  renderToStringWithData
-} from '@apollo/react-ssr';

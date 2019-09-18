@@ -1,4 +1,4 @@
-import { useContext, useEffect, useReducer, useRef } from 'react';
+import {  useEffect, useReducer, useRef } from '@tarojs/taro';
 import {
   getApolloContext,
   OperationVariables,
@@ -15,7 +15,7 @@ export function useBaseQuery<TData = any, TVariables = OperationVariables>(
   options?: QueryHookOptions<TData, TVariables>,
   lazy = false
 ) {
-  const context = useContext(getApolloContext());
+  const context = getApolloContext();
   const [tick, forceUpdate] = useReducer(x => x + 1, 0);
   const updatedOptions = options ? { ...options, query } : { query };
 

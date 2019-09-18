@@ -1,9 +1,7 @@
 export {
-  ApolloProvider,
-  ApolloConsumer,
   getApolloContext,
   resetApolloContext
-} from '@apollo/react-common';
+} from '@apollo/taro-common';
 
 export { Query } from './Query';
 export { Mutation } from './Mutation';

@@ -1,4 +1,4 @@
-import React from 'react';
+import {Context,createContext} from '@tarojs/taro';
 import ApolloClient from 'apollo-client';
 
 export interface ApolloContextValue {
@@ -6,15 +6,19 @@ export interface ApolloContextValue {
   renderPromises?: Record<any, any>;
 }
 
-let apolloContext: React.Context<ApolloContextValue>;
+let apolloContext: Context<ApolloContextValue>;
 
 export function getApolloContext() {
   if (!apolloContext) {
-    apolloContext = React.createContext<ApolloContextValue>({});
+    apolloContext = createContext<ApolloContextValue>({});
   }
   return apolloContext;
 }
 
 export function resetApolloContext() {
-  apolloContext = React.createContext<ApolloContextValue>({});
+  apolloContext = createContext<ApolloContextValue>({});
+}
+
+export function setApolloContext(context) {
+  apolloContext = context;
 }

@@ -1,5 +1,5 @@
-import { OperationVariables } from '@apollo/react-common';
-import { useMutation } from '@apollo/react-hooks';
+import { OperationVariables } from '@apollo/taro-common';
+import { useMutation } from '@apollo/taro-hooks';
 import PropTypes from 'prop-types';
 
 import { MutationComponentOptions } from './types';
