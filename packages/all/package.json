@@ -1,7 +1,7 @@
 {
   "name": "taro-apollo",
   "description": "Taro Apollo Hooks, Components, and HOC.",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "author": "opensource@apollographql.com",
   "keywords": [
     "apollo",
